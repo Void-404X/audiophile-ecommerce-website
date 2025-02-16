@@ -29,6 +29,9 @@ const SpeakerPromoCard: React.FC = () => {
           See Product
         </button>
       </div>
+
+
+
     </div>
   );
 };
