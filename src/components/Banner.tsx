@@ -1,12 +1,15 @@
 import React from "react";
 import bitmap from "../assets/icons/bitmap.svg";
 
-const Banner:React.FC = () => {
+const Banner: React.FC = () => {
   return (
-    <div className="bg-[#191919]">
-      <img className="w-screen" src={bitmap} alt="bitmap" />
-
-      <div className="absolute w-[20rem] left-1/2 top-90 -translate-x-1/2 -translate-y-1/2 text-center">
+    <div className="bg-[#191919] relative z-20 w-full h-[calc(100vh-6rem)] flex justify-center items-center lg:flex-row-reverse lg:justify-between lg:bg-[rgb(16,16,16)] md:bg-[rgb(16,16,16)] lg:px-20 xl:px-60 2xl:px-80">
+      <img
+        className="absolute w-full h-full lg:w-auto lg:h-auto lg:ml-8 lg:order-last lg:ml-auto"
+        src={bitmap}
+        alt="bitmap"
+      />
+      <div className="relative text-center w-[20rem] lg:text-left lg:w-[25rem] lg:mr-auto">
         <span className="text-white font-normal text-[14px] leading-normal tracking-[10px] opacity-50 block mb-4">
           NEW PRODUCT
         </span>
@@ -17,7 +20,7 @@ const Banner:React.FC = () => {
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </span>
-        <button className={`w-40 h-12 bg-[#D87D4A] text-white`}>
+        <button className="w-40 h-12 bg-[#D87D4A] text-white">
           SEE PRODUCT
         </button>
       </div>

@@ -12,11 +12,11 @@ const ProductCategory: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-24 h-auto px-6 my-10">
+    <div className="flex flex-col md:flex-row gap-24 md:gap-8 md:justify-between h-auto px-6 my-10 lg:px-20 xl:px-60 2xl:px-80">
       {categories.map((item, index) => (
         <div
           key={index}
-          className="relative bg-gray-100 h-42 p-6 rounded-lg flex flex-col items-center"
+          className="relative bg-gray-100 h-42 p-6 md:w-full rounded-lg flex flex-col items-center"
         >
 
           <div className="absolute top-24 w-24 h-6 bg-black opacity-50 rounded-full blur-lg transform -translate-y-12"></div>
