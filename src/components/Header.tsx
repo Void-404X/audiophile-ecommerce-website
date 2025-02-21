@@ -19,10 +19,10 @@ const Header: React.FC = () => {
       />
 
       <ul className="hidden lg:flex items-center gap-6 mx-auto">
-        <li className="text-white">HOME</li>
-        <li className="text-white">HEADPHONES</li>
-        <li className="text-white">SPEAKERS</li>
-        <li className="text-white">EARPHONES</li>
+        <li className="text-white hover:underline pb-2 cursor-pointer">HOME</li>
+        <li className="text-white hover:underline pb-2 cursor-pointer">HEADPHONES</li>
+        <li className="text-white hover:underline pb-2 cursor-pointer">SPEAKERS</li>
+        <li className="text-white hover:underline pb-2 cursor-pointer">EARPHONES</li>
       </ul>
 
       <ul className="flex items-center gap-6">

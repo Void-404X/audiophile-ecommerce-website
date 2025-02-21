@@ -3,20 +3,23 @@ import zx7_speaker from "../assets/icons/zx7speaker.svg";
 
 const Speaker_Cart_ZX7: React.FC = () => {
   return (
-    <div className="relative max-w-screen-md h-80 md:mx-10 flex items-center rounded-lg overflow-hidden mx-6 bg-gray-300 my-8">
-      <div className="absolute inset-0">
+    <div className="relative md:mx-10 lg:mx-10 xl:mx-20 2xl:mx-40 mx-6 h-80 flex flex-col justify-center rounded-lg my-8">
+      <div className="absolute inset-0  flex justify-end">
         <img
           src={zx7_speaker}
           alt="ZX7 Speaker"
-          className="w-[200%] h-full object-cover"
+          className="w-full h-full object-cover rounded-md"
         />
       </div>
 
-      <div className="relative z-10 flex flex-col justify-center pl-[5%] md:pl-16">
-        <span className="text-2xl font-bold tracking-wide text-black">
+      <div className="relative z-10 ml-[5%]">
+        <span className="text-2xl font-bold text-black block xl:text-5xl">
           ZX7 SPEAKER
         </span>
-        <button className="mt-4 py-2 border border-black text-black text-sm font-medium">
+      </div>
+
+      <div className="relative z-10 ml-[5%]">
+        <button className="mt-4 px-4 py-2 border border-black text-black text-sm font-medium w-fit">
           SEE PRODUCT
         </button>
       </div>

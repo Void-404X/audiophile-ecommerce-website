@@ -3,16 +3,17 @@ import persone_with_headphone from "../assets/icons/persone_with_headphone.svg";
 
 const AudioFeatureCard: React.FC = () => {
   return (
-    <div className="max-w-screen-md mx-6 md:mx-10 my-30">
-      <div className="w-full mb-10">
+    <div className="max-w-screen-lg md:mx-10 lg:mx-10 xl:mx-20 2xl:mx-40 mx-6 my-30 lg:flex">
+      <div className="w-full lg:w-100 lg:h-100 lg:flex-shrink-0">
         <img
-          className="w-full"
+          className="w-full h-full object-cover rounded-lg"
           src={persone_with_headphone}
           alt="persone_with_headphone"
         />
       </div>
+
       <div>
-        <h3 className="text-4xl md:text-5xl md:px-10 w-full  text-center mb-8 font-bold leading-normal uppercase tracking-wide">
+        <h3 className="text-4xl mt-20 lg:mt-10 md:text-5xl md:px-10 w-full  text-center mb-8 font-bold leading-normal uppercase tracking-wide">
           Bringing you the <span className="text-[#D87D4A]">best </span>audio
           gear
         </h3>

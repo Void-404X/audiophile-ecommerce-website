@@ -4,10 +4,10 @@ import yx1earphonemd from "../assets/icons/yxearphonemd.svg";
 
 const Earphones_Cart_YX1: React.FC = () => {
   return (
-    <div className="md:flex md:justify-between mx-6 md:mx-10">
-      <div className="max-w-screen-md md:w-84 md:h-80">
+    <div className="md:flex md:justify-between mx-6 md:mx-10 lg:mx-10 xl:mx-20 2xl:mx-40 lg:flex lg:justify-end space-x-4">
+      <div className="md:h-80">
         <img
-          className="md:hidden md:w-80 md:h-80"
+          className="w-full h-auto object-cover md:hidden"
           src={yx1earphone}
           alt="yx1earphone"
         />
@@ -17,7 +17,7 @@ const Earphones_Cart_YX1: React.FC = () => {
           alt="yx1earphonemd"
         />
       </div>
-      <div className="max-w-screen-md mt-8 md:mt-0 h-80 md:w-84 md:h-80 bg-[#F1F1F1] p-6 rounded-lg flex flex-col items-center">
+      <div className="max-w-screen-lg mt-8 md:mt-0 h-60 md:w-84 md:h-80 bg-[#F1F1F1] p-6 rounded-lg flex flex-col items-center justify-center">
         <h2 className="text-3xl mt-4 font-bold text-black tracking-wide">
           YX1 EARPHONES
         </h2>
