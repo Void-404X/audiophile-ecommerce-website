@@ -1,11 +1,17 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import menu from "../assets/icons/menu.svg";
 import logo from "../assets/icons/logo.svg";
 import shop from "../assets/icons/shop.svg";
 
 const Header: React.FC = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   return (
-    <div className="w-full bg-[#191919] md:bg-transparent absolute z-30 px-8 py-6 flex justify-between items-center border-b border-gray-500 md:border-none lg:border lg:border-gray-500 lg:justify-between lg:px-20 xl:px-60 2xl:px-80">
+    <div
+      className={`w-full bg-[#191919] md:bg-transparent z-30 px-8 py-6 flex justify-between items-center border-b border-gray-500 md:border-none lg:border lg:border-gray-500 lg:justify-between lg:px-20 xl:px-60 2xl:px-80 ${isHome ? "absolute" : "relative"}`}
+    >
       <ul className="flex items-center gap-6 lg:hidden">
         <li>
           <img src={menu} alt="menu" className="w-8 h-8" />
