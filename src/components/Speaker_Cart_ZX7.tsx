@@ -19,7 +19,7 @@ const Speaker_Cart_ZX7: React.FC = () => {
       </div>
 
       <div className="relative z-10 ml-[5%]">
-        <button className="mt-4 px-4 py-2 border border-black text-black text-sm font-medium w-fit">
+        <button className="mt-4 hover:bg-[#000000] cursor-pointer hover:text-white px-4 py-2 border border-black text-black text-sm font-medium w-fit">
           SEE PRODUCT
         </button>
       </div>

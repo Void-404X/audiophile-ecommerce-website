@@ -14,7 +14,7 @@ const AudioFeatureCard: React.FC = () => {
 
       <div>
         <h3 className="text-4xl mt-20 lg:mt-10 md:text-5xl md:px-10 w-full  text-center mb-8 font-bold leading-normal uppercase tracking-wide">
-          Bringing you the <span className="text-[#D87D4A]">best </span>audio
+          Bringing you the <br /><span className="text-[#D87D4A]">best </span>audio
           gear
         </h3>
         <p className="text-base md:px-10 text-center opacity-50 font-medium leading-6">

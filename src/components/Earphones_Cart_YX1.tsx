@@ -17,11 +17,11 @@ const Earphones_Cart_YX1: React.FC = () => {
           alt="yx1earphonemd"
         />
       </div>
-      <div className="w-100 max-w-screen-lg mt-8 md:mt-0 h-60 md:w-84 md:h-80 bg-[#F1F1F1] p-6 rounded-lg flex flex-col items-center justify-center">
+      <div className="w-100 max-w-screen-lg mt-8 md:mt-0 h-60 md:w-84 md:h-80 bg-[#F1F1F1] p-6 rounded-lg flex flex-col items-center justify-center md:">
         <h2 className="text-3xl mt-4 font-bold text-black tracking-wide">
           YX1 EARPHONES
         </h2>
-        <button className="mt-8 w-40 h-12 border border-black text-black text-sm font-medium tracking-wide transition duration-300 hover:bg-black hover:text-white">
+        <button className="mt-8 w-40 h-12 border border-black text-black text-sm font-medium tracking-wide transition duration-300 hover:bg-black cursor-pointer hover:text-white">
           SEE PRODUCT
         </button>
       </div>

@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </span>
-        <button className="w-40 h-12 bg-[#D87D4A] text-white">
+        <button className="w-40 h-12 bg-[#D87D4A] cursor-pointer hover:bg-[#FBAF85] text-white hover:">
           SEE PRODUCT
         </button>
       </div>

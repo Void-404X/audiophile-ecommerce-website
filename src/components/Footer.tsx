@@ -14,10 +14,10 @@ const Footer: React.FC = () => {
       <img className="my-12" src={logo} alt="logo" />
 
       <ul className="flex flex-col md:flex-row md:gap-8 gap-4 text-sm font-bold tracking-widest mb-8">
-        <li className="cursor-pointer hover:text-yellow-400">HOME</li>
-        <li className="cursor-pointer hover:text-yellow-400">HEADPHONES</li>
-        <li className="cursor-pointer hover:text-yellow-400">SPEAKERS</li>
-        <li className="cursor-pointer hover:text-yellow-400">EARPHONES</li>
+        <li className="cursor-pointer hover:text-[#D87D4A]">HOME</li>
+        <li className="cursor-pointer hover:text-[#D87D4A]">HEADPHONES</li>
+        <li className="cursor-pointer hover:text-[#D87D4A]">SPEAKERS</li>
+        <li className="cursor-pointer hover:text-[#D87D4A]">EARPHONES</li>
       </ul>
 
       <p className="text-gray-400 my-6 md:max-w-160 text-sm md:text-md leading-6 max-w-md mb-8">

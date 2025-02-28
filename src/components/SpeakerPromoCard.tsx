@@ -23,9 +23,11 @@ const SpeakerPromoCard: React.FC = () => {
             truly remarkable sound.
           </p>
 
-          <button className="relative z-10 mt-6 bg-black text-white py-3 px-6  text-sm uppercase">
-            See Product
-          </button>
+
+            <button className="hover:bg-[#4C4C4C] z-10 bg-black text-white py-3 px-6 text-sm uppercase">
+              See Product
+            </button>
+ 
         </div>
       </div>
 
