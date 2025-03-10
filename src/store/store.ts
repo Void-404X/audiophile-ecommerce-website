@@ -6,6 +6,7 @@ interface Product {
   tag?: string;
   description: string;
   price: number;
+  type: string;
   images?: string[];
   features1: string;
   features2: string;

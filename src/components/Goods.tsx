@@ -6,6 +6,7 @@ interface HeadphonesGoodsProps {
   name: string;
   image: string;
   tag?: string;
+  type: string;
   description: string;
   buttonLabel: string;
   reverse?: boolean;
@@ -20,6 +21,7 @@ const HeadphonesGoods: React.FC<HeadphonesGoodsProps> = ({
   name,
   image,
   tag,
+  type,
   description,
   buttonLabel,
   price,
@@ -36,6 +38,7 @@ const HeadphonesGoods: React.FC<HeadphonesGoodsProps> = ({
       name,
       image,
       tag,
+      type,
       description,
       price: price ?? 0,
       images,
@@ -44,7 +47,7 @@ const HeadphonesGoods: React.FC<HeadphonesGoodsProps> = ({
       inTheBox,
     });
 
-    navigate(`/detail/${name.toLowerCase()}`);
+    navigate(`/detail/${name.toLowerCase()}/${type}`);
   };
 
   return (
