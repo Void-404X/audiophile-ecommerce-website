@@ -14,9 +14,18 @@ import first_xx99_1 from "../assets/icons/xx99_1_photo_detail_first.svg";
 import second_xx99_1 from "../assets/icons/xx99_1_photo_detail_second.svg";
 import third_xx99_1 from "../assets/icons/xx99_1_photo_detail_third.svg";
 
+import first_xx59 from "../assets/icons/xx59_photo_detail_first.svg";
+import second_xx59 from "../assets/icons/xx59_photo_detail_second.svg";
+import third_xx59 from "../assets/icons/xx59_photo_detail_third.svg";
+
 import first_zx9 from "../assets/icons/zx9_photo_detail_first.svg";
 import second_zx9 from "../assets/icons/zx9_photo_detail_second.svg";
 import third_zx9 from "../assets/icons/zx9_photo_detail_third.svg";
+
+import first_zx7 from "../assets/icons/zx7_photo_detail_first.svg";
+import second_zx7 from "../assets/icons/zx7_photo_detail_second.svg";
+import third_zx7 from "../assets/icons/zx7_photo_detail_third.svg";
+
 
 interface Headphone {
   id: number;
@@ -97,7 +106,7 @@ const useHeadphonesStore = create<HeadphonesState>((set) => ({
         "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones...",
       buttonLabel: "SEE PRODUCT",
       price: 899,
-      images: ["image1.png", "image2.png", "image3.png"],
+      images: [first_xx59, second_xx59, third_xx59],
       features1:
         "These headphones have been created from durable, high-quality materials tough enough to take anywhere...",
       features2:
@@ -137,7 +146,7 @@ const useHeadphonesStore = create<HeadphonesState>((set) => ({
     },
 
     {
-      id: 4,
+      id: 5,
       name: "ZX7 SPEAKER",
       image: zx7,
       type: "speaker",
@@ -145,7 +154,7 @@ const useHeadphonesStore = create<HeadphonesState>((set) => ({
         "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
       buttonLabel: "SEE PRODUCT",
       price: 4500,
-      images: [first_zx9, second_zx9, third_zx9],
+      images: [first_zx7, second_zx7, third_zx7],
       features1:
         "Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m).",
       features2:
@@ -156,6 +165,29 @@ const useHeadphonesStore = create<HeadphonesState>((set) => ({
         { quantity: 1, item: "User Manual" },
         { quantity: 1, item: "3.5mm 10m Audio Cable" },
         { quantity: 1, item: "10m Optical Cable" },
+      ],
+    },
+
+    {
+      id: 6,
+      name: "YX1 WIRELESS EARPHONES",
+      image: zx7,
+      type: "speaker",
+      description:
+        "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
+      buttonLabel: "SEE PRODUCT",
+      price: 599,
+      images: [first_zx7, second_zx7, third_zx7],
+      features1:
+        "Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound.",
+      features2:
+        "The YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black.",
+      inTheBox: [
+        { quantity: 2, item: "Earphone Unit" },
+        { quantity: 6, item: "Multi-size Earplugs" },
+        { quantity: 1, item: "User Manual" },
+        { quantity: 1, item: "USB-C Charging Cable" },
+        { quantity: 1, item: "Travel Pouch" },
       ],
     },
   ],

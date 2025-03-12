@@ -1,8 +1,10 @@
 import React from "react";
 import yx1earphone from "../assets/icons/yx1earphone.svg";
 import yx1earphonemd from "../assets/icons/yxearphonemd.svg";
+import { useNavigate } from "react-router-dom";
 
 const Earphones_Cart_YX1: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col md:flex-row items-center justify-center mx-6 md:mx-10 lg:mx-10 xl:mx-20 2xl:mx-40 space-x-0 md:space-x-4 lg:space-x-12  text-center">
       <div className="md:h-80 flex items-center justify-center">
@@ -21,7 +23,7 @@ const Earphones_Cart_YX1: React.FC = () => {
         <h2 className="text-3xl mt-4 font-bold text-black tracking-wide">
           YX1 EARPHONES
         </h2>
-        <button className="mt-8 w-40 h-12 border border-black text-black text-sm font-medium tracking-wide transition duration-300 hover:bg-black cursor-pointer hover:text-white">
+        <button onClick={() => navigate('/detail/yx1%20wireless%20earphones/undefined')} className="mt-8 w-40 h-12 border border-black text-black text-sm font-medium tracking-wide transition duration-300 hover:bg-black cursor-pointer hover:text-white">
           SEE PRODUCT
         </button>
       </div>

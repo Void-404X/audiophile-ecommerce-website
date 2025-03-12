@@ -6,7 +6,10 @@ import facebook from "../assets/icons/facebook.svg";
 import twitter from "../assets/icons/twitter.svg";
 import instagram from "../assets/icons/instagram.svg";
 
+import { useNavigate } from "react-router-dom";
+
 const Footer: React.FC = () => {
+  const navigate = useNavigate()
   return (
     <div className="bg-black text-white flex flex-col items-center text-center md:items-start md:text-start px-6 md:px-12 pb-12">
       <img src={stick} alt="stick" className="mb-8" />
@@ -14,10 +17,10 @@ const Footer: React.FC = () => {
       <img className="my-12" src={logo} alt="logo" />
 
       <ul className="flex flex-col md:flex-row md:gap-8 gap-4 text-sm font-bold tracking-widest mb-8">
-        <li className="cursor-pointer hover:text-[#D87D4A]">HOME</li>
-        <li className="cursor-pointer hover:text-[#D87D4A]">HEADPHONES</li>
-        <li className="cursor-pointer hover:text-[#D87D4A]">SPEAKERS</li>
-        <li className="cursor-pointer hover:text-[#D87D4A]">EARPHONES</li>
+        <li onClick={() => navigate('/')} className="cursor-pointer hover:text-[#D87D4A]">HOME</li>
+        <li onClick={() => navigate('/headphones')} className="cursor-pointer hover:text-[#D87D4A]">HEADPHONES</li>
+        <li onClick={() => navigate('/speakers')} className="cursor-pointer hover:text-[#D87D4A]">SPEAKERS</li>
+        <li onClick={() => navigate('/earphones')} className="cursor-pointer hover:text-[#D87D4A]">EARPHONES</li>
       </ul>
 
       <p className="text-gray-400 my-6 md:max-w-160 text-sm md:text-md leading-6 max-w-md mb-8">

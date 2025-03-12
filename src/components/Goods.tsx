@@ -4,6 +4,7 @@ import useStore from "../store/store";
 
 interface HeadphonesGoodsProps {
   name: string;
+  id: number;
   image: string;
   tag?: string;
   type: string;
@@ -19,6 +20,7 @@ interface HeadphonesGoodsProps {
 
 const HeadphonesGoods: React.FC<HeadphonesGoodsProps> = ({
   name,
+  id,
   image,
   tag,
   type,
@@ -35,6 +37,7 @@ const HeadphonesGoods: React.FC<HeadphonesGoodsProps> = ({
   const setSelectedProduct = useStore((state) => state.setSelectedProduct); // Zustand function
   const handleClick = () => {
     setSelectedProduct({
+      id,
       name,
       image,
       tag,

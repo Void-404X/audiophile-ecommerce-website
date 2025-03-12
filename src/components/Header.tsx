@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import menuIcon from "../assets/icons/menu.svg";
 import logoIcon from "../assets/icons/logo.svg";
 import shopIcon from "../assets/icons/shop.svg";
+import Basket from "./Basket";
 
 const NAV_ITEMS = [
   { name: "HOME", path: "/" },
@@ -14,6 +15,7 @@ const NAV_ITEMS = [
 const Header: React.FC = () => {
   const location = useLocation();
   const isHome = location.pathname === "/";
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   return (
     <header
@@ -27,7 +29,11 @@ const Header: React.FC = () => {
       </button>
 
       {/* Logo */}
-      <img src={logoIcon} alt="logo" className="w-24 md:w-auto mx-auto md:mx-0 md:ml-10 md:mr-auto lg:mx-0" />
+      <img
+        src={logoIcon}
+        alt="logo"
+        className="w-24 md:w-auto mx-auto md:mx-0 md:ml-10 md:mr-auto lg:mx-0"
+      />
 
       {/* Navigation Links */}
       <nav className="hidden lg:flex items-center gap-6 mx-auto">
@@ -37,7 +43,9 @@ const Header: React.FC = () => {
             to={path}
             className={({ isActive }) =>
               `pb-2 cursor-pointer transition-colors ${
-                isActive ? "text-[#D87D4A] border-b-2 border-[#D87D4A]" : "text-white hover:text-[#D87D4A]"
+                isActive
+                  ? "text-[#D87D4A] border-b-2 border-[#D87D4A]"
+                  : "text-white hover:text-[#D87D4A]"
               }`
             }
           >
@@ -46,10 +54,20 @@ const Header: React.FC = () => {
         ))}
       </nav>
 
-
-      <button className="cursor-pointer">
+      {/* Cart Button */}
+      <button
+        onClick={() => setIsCartOpen(!isCartOpen)}
+        className="cursor-pointer relative"
+      >
         <img src={shopIcon} alt="shop" className="w-8 h-8" />
       </button>
+
+      {/* Cart Dropdown */}
+      {isCartOpen && (
+        <div className="absolute top-20 right-10 bg-white shadow-lg rounded-lg p-6 w-108 z-50">
+          <Basket />
+        </div>
+      )}
     </header>
   );
 };

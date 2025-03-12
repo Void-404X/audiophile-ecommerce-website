@@ -17,7 +17,7 @@ const ProductCategory: React.FC = () => {
         <div className="text-center mt-4">
           <span className="block text-lg font-bold">HEADPHONES</span>
           <a
-            href="/headphone"
+            href="/headphones"
             className="text-gray-600 hover:text-[#D87D4A] focus:text-white active:text-white flex items-center justify-center gap-2 mt-2 transition-colors duration-300"
           >
             <span className="pr-2">SHOP</span>
@@ -36,7 +36,7 @@ const ProductCategory: React.FC = () => {
         <div className="text-center mt-4">
           <span className="block text-lg font-bold">SPEAKERS</span>
           <a
-            href="#"
+            href="/speakers"
             className="text-gray-600 hover:text-[#D87D4A] flex items-center justify-center gap-2 mt-2 transition-colors duration-300"
           >
             <span className="pr-2">SHOP</span>
@@ -55,7 +55,7 @@ const ProductCategory: React.FC = () => {
         <div className="text-center mt-4">
           <span className="block text-lg font-bold">EARPHONES</span>
           <a
-            href="/fakdsfjla"
+            href="/earphones"
             className="text-gray-600 hover:text-[#D87D4A] cursor-pointer focus:text-[#D87D4A] active:text-[#D87D4A] flex items-center justify-center gap-2 mt-2 transition-colors duration-300"
           >
             <span className="pr-2">SHOP</span>

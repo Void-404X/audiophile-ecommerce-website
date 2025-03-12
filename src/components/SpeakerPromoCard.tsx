@@ -2,8 +2,10 @@ import React from "react";
 import speaker_zx9 from "../assets/icons/speaker_zx9.svg";
 import oval from "../assets/icons/oval.svg";
 import full_oval from "../assets/icons/full_oval.svg";
+import { useNavigate } from "react-router-dom";
 
 const SpeakerPromoCard: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="relative bg-[#D87D4A] max-w-full mx-6 md:mx-10 h-[40rem] md:h-[45rem] rounded-lg flex flex-col items-center text-center pt-12 lg:mx-20 xl:mx-60 2xl:mx-80 lg:hidden">
@@ -23,11 +25,12 @@ const SpeakerPromoCard: React.FC = () => {
             truly remarkable sound.
           </p>
 
-
-            <button className="hover:bg-[#4C4C4C] z-10 bg-black text-white py-3 px-6 text-sm uppercase">
-              See Product
-            </button>
- 
+          <button
+            onClick={() => navigate("/detail/zx9%20speaker/undefined")}
+            className="hover:bg-[#4C4C4C] z-10 bg-black text-white py-3 px-6 text-sm uppercase cursor-pointer hover:bg-[#4C4C4C]"
+          >
+            See Product
+          </button>
         </div>
       </div>
 
@@ -53,7 +56,10 @@ const SpeakerPromoCard: React.FC = () => {
               truly remarkable sound.
             </p>
 
-            <button className="relative z-10 mt-6 bg-black text-white py-3 px-6 text-sm uppercase">
+            <button
+              onClick={() => navigate("/detail/zx9%20speaker/undefined")}
+              className="relative z-10 mt-6 bg-black text-white py-3 px-6 text-sm uppercase cursor-pointer hover:bg-[#4C4C4C]"
+            >
               See Product
             </button>
           </div>

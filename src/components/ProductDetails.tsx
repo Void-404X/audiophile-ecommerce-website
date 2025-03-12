@@ -3,9 +3,11 @@ import useStore from "../store/store";
 import { useNavigate } from "react-router-dom";
 import YouMayAlsoLike from "./YouMayAlsoLike";
 import ProductCategory from "./ProductCategory";
+import { useCartStore } from "../store/basket_store";
 
 const ProductDetails: React.FC = () => {
   const { selectedProduct } = useStore();
+  const { addToCart, cart } = useCartStore();
   const [quantity, setQuantity] = useState(1);
   const navigate = useNavigate();
 
@@ -21,6 +23,20 @@ const ProductDetails: React.FC = () => {
 
   const increase = () => {
     setQuantity(quantity + 1);
+  };
+
+  const handleAddToCart = () => {
+    addToCart(
+      {
+        id: selectedProduct.id,
+        name: selectedProduct.name,
+        price: selectedProduct.price,
+        image: selectedProduct.image,
+        quantity,
+      },
+      quantity
+    );
+    console.log(cart);
   };
 
   return (
@@ -74,7 +90,10 @@ const ProductDetails: React.FC = () => {
               </button>
             </div>
 
-            <button className="w-40 h-12 bg-[#D87D4A] cursor-pointer hover:bg-[#FBAF85] text-white font-manrope font-bold text-[13px] tracking-[1px]">
+            <button
+              onClick={handleAddToCart}
+              className="w-40 h-12 bg-[#D87D4A] cursor-pointer hover:bg-[#FBAF85] text-white font-manrope font-bold text-[13px] tracking-[1px]"
+            >
               ADD TO CART
             </button>
           </div>

@@ -1,7 +1,9 @@
 import React from "react";
 import bitmap from "../assets/icons/bitmap.svg";
+import { useNavigate } from "react-router-dom";
 
 const Banner: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#191919] relative z-20 w-full h-[calc(100vh-6rem)] flex justify-center items-center lg:flex-row-reverse lg:justify-between lg:bg-[rgb(16,16,16)] md:bg-[rgb(16,16,16)] lg:px-20 xl:px-60 2xl:px-80">
       <img
@@ -20,7 +22,12 @@ const Banner: React.FC = () => {
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </span>
-        <button className="w-40 h-12 bg-[#D87D4A] cursor-pointer hover:bg-[#FBAF85] text-white hover:">
+        <button
+          onClick={() =>
+            navigate("/detail/xx99%20mark%20ii%20headphones/headphones")
+          }
+          className="w-40 h-12 bg-[#D87D4A] cursor-pointer hover:bg-[#FBAF85] text-white"
+        >
           SEE PRODUCT
         </button>
       </div>

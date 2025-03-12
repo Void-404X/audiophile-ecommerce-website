@@ -1,6 +1,7 @@
 import { create } from "zustand";
 
 interface Product {
+  id: number
   name: string;
   image: string;
   tag?: string;
@@ -11,6 +12,7 @@ interface Product {
   features1: string;
   features2: string;
   inTheBox?: { item: string; quantity: number }[];
+  inBasket?: null
 }
 
 
